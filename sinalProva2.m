@@ -1,0 +1,18 @@
+clear; clc;
+t = [-1:1/60:1];
+n = 3;
+w = pi;
+s1 = (1+(1./(n.*pi)).*sin(n.*pi).*cos(n.*w.*t))+(((1./(n.*pi))).*((1-cos(n.*pi)).*sin(n.*w.*t)));
+subplot(3, 2, 1);
+plot(t, s1);
+title('Sinal 1');
+n = 11;
+s2 = (1+(1./(n.*pi)).*sin(n.*pi).*cos(n.*w.*t))+(((1./(n.*pi))).*((1-cos(n.*pi)).*sin(n.*w.*t)));
+subplot(3, 2, 2);
+plot(t, s2);
+title('Sinal 2');
+n = 49;
+s3 = (1+(1./(n.*pi)).*sin(n.*pi).*cos(n.*w.*t))+(((1./(n.*pi))).*((1-cos(n.*pi)).*sin(n.*w.*t)));
+subplot(3, 2, 3);
+plot(t, s3);
+title('Sinal 3');
