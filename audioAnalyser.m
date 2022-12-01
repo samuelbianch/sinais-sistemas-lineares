@@ -2,10 +2,10 @@ clc;
 clear;
 fs = 4410; # frequencia amostragem na gravação do áudio
 nbits = 16; # bits da placa de audiodevinfo
-arquivo = 'bateria.wav';
+arquivo = 'Sons/bateria.wav';
 %ler arquivo WAV ------------
 arquivo = audioinfo(arquivo);
-[audio_wav, fs] = audioread('bateria.wav');
+[audio_wav, fs] = audioread('Sons/bateria.wav');
 audio_wav = audio_wav(:,1)'; # canal 1
 t = 0:1/fs:1;
 # escutando o som ----------
